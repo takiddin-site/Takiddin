@@ -4,6 +4,125 @@
   <meta charset="UTF-8">
   <title>Takiddin – Website Pribadi</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+    body {
+      font-family: 'EB Garamond', serif;
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #006633;
+      padding: 20px;
+      color: white;
+    }
+
+    .logo-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-text {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #eaf0f6;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    .slideshow {
+      max-width: 800px;
+      margin: 30px auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 12s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(0%); }
+      33%  { transform: translateX(-100%); }
+      66%  { transform: translateX(-200%); }
+      100% { transform: translateX(0%); }
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 30px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      width: 400px;
+    }
+
+    .card h2 {
+      color: #006633;
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .card li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -19,39 +138,43 @@
   </header>
 
   <section class="hero">
-    <h1>Takiddin</h1>
-    <p>Dosen FITK UIN Jakarta | Peneliti & Pengajar Literasi Pendidikan</p>
+    <h1>Website Pribadi Akademik</h1>
+    <p>Dosen FITK UIN Jakarta | Literasi Pendidikan | Automasi Dokumen Institusi</p>
   </section>
+
+  <div class="slideshow">
+    <div class="slides">
+      <img src="https://picsum.photos/id/1015/800/400" alt="Slide 1">
+      <img src="https://picsum.photos/id/1025/800/400" alt="Slide 2">
+      <img src="https://picsum.photos/id/1035/800/400" alt="Slide 3">
+    </div>
+  </div>
 
   <main class="grid">
     <div class="card">
-      <h2>📚 Jadwal Mengajar</h2>
+      <h2>🎓 Pendidikan</h2>
       <ul>
-        <li>Senin – Konsep Dasar IPS (10.00–11.40 WIB)</li>
-        <li>Selasa – Konsep Dasar IPS (07.30–10.00 WIB)</li>
-        <li>Selasa – Konsep Dasar IPS (10.10–12.40 WIB)</li>
+        <li>S1 – Pendidikan IPS</li>
+        <li>S2 – Pendidikan Dasar</li>
+        <li>S3 – Pendidikan Islam</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>🔬 Penelitian & Publikasi</h2>
-      <p><a href="https://scholar.google.com/citations?user=RpjZXFIAAAAJ&hl=id" target="_blank">Google Scholar</a></p>
+      <h2>📄 Publikasi</h2>
       <ul>
-        <li>“Nilai-nilai Kearifan Lokal Dalam Lamban” – SOSIO-DIDAKTIKA</li>
-        <li>“Uang dalam Perspektif Ekonomi Islam” – SALAM</li>
-        <li>“Integrasi Ilmu Ekonomi dan Hadis” – TARBIYA</li>
+        <li>“Nilai-nilai Kearifan Lokal” – SOSIO-DIDAKTIKA</li>
+        <li>“Ekonomi Islam” – SALAM</li>
+        <li><a href="https://scholar.google.com/citations?user=RpjZXFIAAAAJ&hl=id" target="_blank">Google Scholar</a></li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>🎥 Channel YouTube</h2>
-      <p><a href="https://www.youtube.com/@TakiddinAbiaivara" target="_blank">@TakiddinAbiaivara – YouTube Channel</a></p>
+      <h2>📱 Kontak</h2>
       <ul>
-        <li><a href="https://www.youtube.com/watch?v=O1oxWjh3AEw">Mad i'wadh</a></li>
-        <li><a href="https://www.youtube.com/watch?v=CVT1Fws2JkY">Tadarus Jus 1</a></li>
-        <li><a href="https://www.youtube.com/watch?v=88GFciydCtg">Tempat Keluar Huruf Hijaiyah</a></li>
-        <li><a href="https://www.youtube.com/watch?v=gTBg2qDkrok">Hukum Mad</a></li>
-        <li><a href="https://www.youtube.com/watch?v=A0-dKBSiDtE">Banana Smoothies</a></li>
+        <li>Email: takiddin@uinjkt.ac.id</li>
+        <li>WhatsApp: +62 812-XXXX-XXXX</li>
+        <li>Instagram: <a href="https://instagram.com/fitkuinjkt" target="_blank">@fitkuinjkt</a></li>
       </ul>
     </div>
   </main>
@@ -60,4 +183,4 @@
     <p>&copy; 2025 Takiddin | Website Pribadi Dosen FITK UIN Jakarta</p>
   </footer>
 </body>
-</html>index.html
+</html>update layout mirip FITK + slideshow
