@@ -1,3 +1,4 @@
+/* === Reset & Global === */
 body {
   font-family: "Aptos", "Segoe UI", "Helvetica Neue", sans-serif;
   margin: 0;
@@ -6,7 +7,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* === Header === */
 header {
   background-color: #006633;
   padding: 20px;
@@ -31,7 +32,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Hero */
+/* === Hero Section === */
 .hero {
   text-align: center;
   padding: 40px 20px;
@@ -40,9 +41,9 @@ nav a:hover {
 .profil-foto {
   display: block;
   margin: 0 auto 20px;
-  max-width: 180px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 .hero h1 {
   font-size: 2em;
@@ -54,7 +55,7 @@ nav a:hover {
   color: #555;
 }
 
-/* Grid */
+/* === Grid Section === */
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +90,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
+/* === Footer === */
 footer {
   background-color: #eee;
   text-align: center;
@@ -97,10 +98,4 @@ footer {
   font-size: 0.9em;
   color: #555;
   margin-top: 40px;
-  display: block;
-  margin: 0 auto 20px;
-  max-width: 220px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}update foto outdoor profil akademik
 }update
